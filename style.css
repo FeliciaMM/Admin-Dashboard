@@ -155,6 +155,7 @@ a{
     grid-template-columns: 3fr 1fr / 1fr;
     justify-content: space-evenly;
     padding-top: 50px;
+    text-wrap: wrap;
 }
 
 .project-text{
@@ -177,6 +178,14 @@ span{
     grid-row-start: 1;
     height: 250px;
     border-radius: 9px;
+    display: grid;
+    font-size: 13px;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.announcement{
+    padding:20px 40px 20px 40px ;
+    text-wrap:wrap;
 }
 
 .trending{
@@ -184,4 +193,15 @@ span{
     grid-column-start:2 ;
     grid-row-start: 2;
     border-radius: 9px;
+    display: grid;
 }
+
+.trend{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    gap: 30px;
+    font-weight: 100;
+}
+
+/* absolute position titluri content*/
