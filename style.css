@@ -94,12 +94,16 @@ button{
 
 .sidebar > .social-links{
     display: grid;
-    margin: 20px;
+    margin-left: 20px;
 }
 
 .sidebar > .useful-links{
     display: grid;
-    margin: 20px;
+    margin-left: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .sidebar .logo{
