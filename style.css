@@ -91,7 +91,6 @@ button{
     grid-column: 1;
     grid-row-start: 1;
     grid-row-end: 3;
-    display: grid;
 }
 
 .sidebar > .social-links{
@@ -100,19 +99,31 @@ button{
 }
 
 .sidebar > .useful-links{
+    margin-top: 50px;
     display: grid;
     margin-left: 20px;
 }
+
 a{
     text-decoration: none;
     color: black;
 }
 
+.sidebar-item{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
 .sidebar .logo{
     font-size: 30px;
     color: rgb(0, 0, 0);
-    margin: 30px 20px ;
+    margin: 30px 20px;
 }
+
+a{
+    padding-left: 10px;
+}
+
 
 .content{
     background-color: rgb(230, 228, 227);
@@ -135,10 +146,29 @@ a{
 }
 
 .project{
+    border-left: 5px solid rgb(255, 132, 0);
     background-color: white;
     width: 420px;
-    height: 180px;
+    height: 150px;
     border-radius: 9px;
+    display: grid;
+    grid-template-columns: 3fr 1fr / 1fr;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+.project-text{
+    text-wrap: wrap;
+    margin-left: 10px;
+}
+
+.icons{
+    grid-column-start: 2 ;
+    grid-row-start: 2;
+}
+
+span{
+    font-weight: bolder;
 }
 
 .announcements{
