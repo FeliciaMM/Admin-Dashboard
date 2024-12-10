@@ -83,12 +83,20 @@ button{
     border-style: none;
 }
 
-
 .sidebar{
     background-color: aquamarine;
     grid-column: 1;
     grid-row-start: 1;
     grid-row-end: 3;
+    display: grid;
+}
+
+.sidebar > .social-links{
+    display: grid;
+}
+
+.sidebar > .useful-links{
+    display: grid;
 }
 
 .content{
