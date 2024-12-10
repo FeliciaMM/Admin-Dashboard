@@ -10,7 +10,7 @@ body{
 
 .container{
     display: grid;
-    grid-template-columns: 350px auto;
+    grid-template-columns: 250px auto;
 
 }
 
@@ -19,7 +19,7 @@ body{
     background-color: aqua;
     grid-column-start: 2;
     display: grid;
-    grid-template-columns: fr1 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
 }
@@ -31,6 +31,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 10px;
+    margin-left: 50px;
 }
 
 .search> input{
@@ -75,7 +76,7 @@ body{
 }
 
 button{
-    height: 40px;
+    height: 30px;
     width: 80px;
     background-color:rgb(63, 178, 216);
     border-radius: 9px;
@@ -93,14 +94,55 @@ button{
 
 .sidebar > .social-links{
     display: grid;
+    margin: 20px;
 }
 
 .sidebar > .useful-links{
     display: grid;
+    margin: 20px;
+}
+
+.sidebar .logo{
+    font-size: 30px;
+    color: white;
+    margin: 30px 20px ;
 }
 
 .content{
     background-color: antiquewhite;
     grid-column-start: 2;
+    grid-row-start: 2;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 50px 20px 50px 20px;
+}
+
+.projects{
+    grid-column-start:1 ;
+    grid-row-start:1;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.project{
+    background-color: white;
+    width: 400px;
+    height: 160px;
+}
+
+.announcements{
+    background-color: white ;
+    grid-column-start:2 ;
+    grid-row-start: 1;
+    height: 250px;
+}
+
+.trending{
+    background-color: white ;
+    grid-column-start:2 ;
     grid-row-start: 2;
 }
